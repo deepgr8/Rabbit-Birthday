@@ -3,9 +3,10 @@ from flask import render_template,Flask
 import os
 import threading
 from pydub import AudioSegment
+from playsound import playsound
 from pydub.playback import play
 os.environ['FLASK_DEBUG'] = 'development'
-
+os.environ["PYDUB_PLAYBACK"] = "audio"
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "thsdssf"
 
@@ -16,6 +17,7 @@ def index():
     return render_template('/index.html')
 
 def play_audio():
+    # playsound('happy.mp3')
     song  = AudioSegment.from_file('new.wav')
     play(song)
 
