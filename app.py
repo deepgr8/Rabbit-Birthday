@@ -4,7 +4,6 @@ import os
 import threading
 from pydub import AudioSegment
 from pydub.playback import play
-
 os.environ['FLASK_DEBUG'] = 'development'
 
 app = Flask(__name__)
