@@ -25,7 +25,9 @@
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
-  
+  audio::-webkit-media-controls {
+    display: none !important;
+  }
   #drag-container, #spin-container {
     position: relative;
     display: -webkit-box;
