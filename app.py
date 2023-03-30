@@ -3,7 +3,6 @@ from flask import render_template,Flask
 import os
 import threading
 from pydub import AudioSegment
-from playsound import playsound
 from pydub.playback import play
 os.environ['FLASK_DEBUG'] = 'development'
 os.environ["PYDUB_PLAYBACK"] = "audio"
