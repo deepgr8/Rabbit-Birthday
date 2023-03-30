@@ -25,13 +25,10 @@
     <img src="./img4.jpg" alt="">
     <img src="./img5.jpg" alt="">
     <img src="./img6.jpg" alt=""> -->
-    <audio id="myaudio" controls autoplay="true">
-      <source src="https://www.macaronisoup.com/songs/mp3/HelloEverybody.mp3" type="audio/mpeg">
+    <iframe src="/static/happy.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio id="player" loop autoplay>
+      <source src="/static/happy.mp3">
     </audio>
-    <!-- <script>
-      var audio = new Audio("https://www.macaronisoup.com/songs/mp3/HelloEverybody.mp3")
-      audio.play();
-    </script> -->
     <p>Happy Birthday!</p>
   </div>
   <div id="ground"></div>
