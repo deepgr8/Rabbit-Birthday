@@ -16,7 +16,7 @@ def index():
     return render_template('/index.html')
 
 def play_audio():
-    song  = AudioSegment.from_mp3('new.wav')
+    song  = AudioSegment.from_file('new.wav')
     play(song)
 
 if __name__ == "__main__":
