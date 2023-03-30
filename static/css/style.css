@@ -15,7 +15,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-image: url("./rabbit.jpg");
+    background-image: url("/static/rabbit.jpg");
     background-size: cover;
     background-position: center;
   
