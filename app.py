@@ -12,14 +12,9 @@ app.config["SECRET_KEY"] = "thsdssf"
 
 @app.route('/')
 def index():
-    t = threading.Thread(target=play_audio)
-    t.start()
+    # t = threading.Thread(target=play_audio)
+    # t.start()
     return render_template('/index.html')
-
-def play_audio():
-    # playsound('happy.mp3')
-    song  = AudioSegment.from_file('new.wav')
-    play(song)
 
 if __name__ == "__main__":
     app.run(debug=True)
