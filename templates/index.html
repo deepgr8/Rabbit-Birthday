@@ -35,27 +35,23 @@
 </div>
 
 <div id="music-container"></div>
-<button id="play-button"onclick="playAudio()" style="
+<!-- <button id="playButton"onclick="playAudio()" style="
 color: black;
 background: #0c0c0c;
-border: aliceblue;">Play</button>
+border: aliceblue;">Play</button> -->
 
-<audio id="myAudio" autoplay>
-  <source src="/happy.mp3" type="audio/mpeg">
+<audio id="myAudio">
+  <source src="/static/happy.mp3" type="audio/mpeg">
 </audio>
-
+<script>
+  document.addEventListener("click", function(){
+    playAudio();
+  })
+</script>
 
 <!-- github corner (https://github.com/tholman/github-corners) -->
 <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <!-- partial -->
   <script  src="/static/ind.js"></script>
-  <script>
-    window.addEventListener("load",function(){
-      setTimeout(function() {
-        console.log("btn clicked")
-        document.getElementById("playButton").click();
-      }, 1000);
-    })
-  </script>
 
 </body>
